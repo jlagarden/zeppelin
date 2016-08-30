@@ -1,6 +1,6 @@
 #Zeppelin
 
-##This Zeppelin Fork adds an InfluxDB interpreter to Apache Zeppelin.
+##This Zeppelin fork adds an InfluxDB interpreter to Apache Zeppelin.
 This branch is based on Zeppelin stable version 0.6.0.
 Supported InfluxDB versions are 0.9 and later.
 
