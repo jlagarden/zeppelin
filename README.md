@@ -1,10 +1,9 @@
 #Zeppelin
 
-**Documentation:** [User Guide](http://zeppelin.apache.org/docs/latest/index.html)<br/>
-**Mailing Lists:** [User and Dev mailing list](http://zeppelin.apache.org/community.html)<br/>
-**Continuous Integration:** [![Build Status](https://secure.travis-ci.org/apache/zeppelin.png?branch=master)](https://travis-ci.org/apache/zeppelin) <br/>
-**Contributing:** [Contribution Guide](https://github.com/apache/zeppelin/blob/master/CONTRIBUTING.md)<br/>
-**Issue Tracker:** [Jira](https://issues.apache.org/jira/browse/ZEPPELIN)<br/>
+#This Zeppelin Fork adds an Influxdb interpreter to Apache Zeppelin.
+
+**InfluxDB** [InfluxDB](https://github.com/influxdata/influxdb)
+**Zeppelin** [Zeppelin](https://github.com/apache/zeppelin)
 **License:** [Apache 2.0](https://github.com/apache/zeppelin/blob/master/LICENSE)
 
 
