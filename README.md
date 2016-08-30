@@ -1,9 +1,13 @@
 #Zeppelin
 
 #This Zeppelin Fork adds an Influxdb interpreter to Apache Zeppelin.
+This branch is based on Zeppelin stable version 0.6.0.
+
 
 **InfluxDB** [InfluxDB](https://github.com/influxdata/influxdb)
+
 **Zeppelin** [Zeppelin](https://github.com/apache/zeppelin)
+
 **License:** [Apache 2.0](https://github.com/apache/zeppelin/blob/master/LICENSE)
 
 
