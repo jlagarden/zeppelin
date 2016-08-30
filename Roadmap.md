@@ -7,5 +7,5 @@ Please check https://cwiki.apache.org/confluence/display/ZEPPELIN/Zeppelin+Roadm
 
 - Add syntax highlighting for influxdb queries
 - Add tests
-- support newer zeppelin releases
-- get InfluxDB Interpreter merged into Apache Zeppelin project! Still a long way to go :D
+- Support newer zeppelin releases
+- Get InfluxDB Interpreter merged into Apache Zeppelin project! Still a long way to go :D
