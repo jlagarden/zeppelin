@@ -55,6 +55,7 @@
     <module>zeppelin-interpreter</module>
     <module>zeppelin-zengine</module>
     <module>zeppelin-display</module>
+    <module>influxdb</module>
     <module>spark-dependencies</module>
     <module>spark</module>
     <module>markdown</module>
