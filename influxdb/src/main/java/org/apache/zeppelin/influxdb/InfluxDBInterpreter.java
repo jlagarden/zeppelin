@@ -77,10 +77,10 @@ public class InfluxDBInterpreter extends Interpreter {
 
     StringBuilder msg = new StringBuilder();
     try {
-      InfluxDB idb = InfluxDBFactory.connect(property.getProperty("url"),
-          property.getProperty("user"), property.getProperty("password"));
+      InfluxDB idb = InfluxDBFactory.connect(property.getProperty("default.url"),
+          property.getProperty("default.user"), property.getProperty("default.password"));
 
-      QueryResult query = idb.query(new Query(cmd, "_internal"));
+      QueryResult query = idb.query(new Query(cmd, property.getProperty("default.database")));
 
       if (query.hasError()) {
         LOGGER.error("InfluxDB Query Error ", query.getError());
@@ -88,7 +88,7 @@ public class InfluxDBInterpreter extends Interpreter {
       } else {
         msg.append(TABLE_MAGIC_TAG);
         List<QueryResult.Result> results = query.getResults();
-        LOGGER.info("InfluxDB Query result '{}'", results.toString());
+        LOGGER.debug("InfluxDB Query result '{}'", results.toString());
         QueryResult.Series data = results.get(0).getSeries().get(0);
         Iterator<String> columns = data.getColumns().iterator();
         Iterator<List<Object>> rows = data.getValues().iterator();
