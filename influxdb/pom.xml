@@ -22,14 +22,14 @@
   <parent>
     <artifactId>zeppelin</artifactId>
     <groupId>org.apache.zeppelin</groupId>
-    <version>0.6.1</version>
+    <version>0.6.2-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
 
   <groupId>org.apache.zeppelin</groupId>
   <artifactId>zeppelin-influxdb</artifactId>
   <packaging>jar</packaging>
-  <version>0.6.1</version>
+  <version>0.6.2-SNAPSHOT</version>
   <name>Zeppelin: InfluxDB interpreter</name>
   <url>http://zeppelin.apache.org</url>
 
@@ -65,6 +65,14 @@
   </dependencies>
 
   <build>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-checkstyle-plugin</artifactId>
+      <configuration>
+        <configLocation>../../_tools/checkstyle.xml</configLocation>
+      </configuration>
+    </plugin>    
+
     <plugins>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
